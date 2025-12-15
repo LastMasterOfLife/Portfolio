@@ -58,8 +58,5 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Navigation to another page
-document.getElementById("poketanime").addEventListener("click", () => {
-  window.location.href = "../pages/PoketAnime.html";
-});
+
 

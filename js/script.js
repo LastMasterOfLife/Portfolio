@@ -62,3 +62,8 @@ window.addEventListener('scroll', () => {
         nav.style.background = 'rgba(255, 255, 255, 0.1)';
     }
 });
+
+// Navigation to another page
+document.getElementById("poketanime").addEventListener("click", () => {
+  window.location.href = "../pages/PoketAnime.html";
+});
