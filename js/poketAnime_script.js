@@ -1,51 +1,40 @@
-// Gyroscope effect for cards
-const cards = document.querySelectorAll('.card-3d');
-
-if (window.DeviceOrientationEvent) {
-    window.addEventListener('deviceorientation', (e) => {
-        const tiltX = e.beta / 3;
-        const tiltY = e.gamma / 3;
-        
-        cards.forEach(card => {
-            card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-        });
-    });
+// Create particles
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 50; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 6 + 's';
+    particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+    particlesContainer.appendChild(particle);
 }
 
-// Mouse follow effect for desktop
+// Scroll animations
+const fadeElements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+fadeElements.forEach(el => observer.observe(el));
+
+// Mouse follow effect for cards
+const cards = document.querySelectorAll('.card-3d');
 document.addEventListener('mousemove', (e) => {
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const tiltX = (e.clientY - centerY) / 30;
-    const tiltY = (e.clientX - centerX) / 30;
+    const tiltX = (e.clientY - centerY) / 40;
+    const tiltY = (e.clientX - centerX) / 40;
     
-    cards.forEach((card, index) => {
-        const delay = index * 0.1;
-        card.style.transform = `rotateX(${-tiltX}deg) rotateY(${tiltY}deg) translateZ(20px)`;
+    cards.forEach(card => {
+        card.querySelector('.card-inner').style.transform = 
+            `rotateX(${-tiltX}deg) rotateY(${tiltY}deg)`;
     });
 });
-
-// Pack click animation
-document.querySelectorAll('.pack').forEach(pack => {
-    pack.addEventListener('click', function() {
-        this.style.animation = 'packShake 0.5s ease-in-out';
-        setTimeout(() => {
-            this.style.animation = '';
-        }, 500);
-    });
-});
-
-// Add pack shake animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes packShake {
-        0%, 100% { transform: scale(1.1) rotate(0deg); }
-        25% { transform: scale(1.15) rotate(-5deg); }
-        50% { transform: scale(1.2) rotate(5deg); }
-        75% { transform: scale(1.15) rotate(-3deg); }
-    }
-`;
-document.head.appendChild(style);
 
 // Smooth scroll
 document.querySelectorAll('nav a').forEach(anchor => {
@@ -57,6 +46,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
-
-
-
