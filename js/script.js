@@ -65,5 +65,6 @@ window.addEventListener('scroll', () => {
 
 // Navigation to another page
 document.getElementById("poketanime").addEventListener("click", () => {
-  window.location.href = "./pages/PoketAnime.html";
+  window.location.href = "../pages/PoketAnime.html";
 });
+
