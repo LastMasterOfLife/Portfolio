@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckManager - Gestione Foto Android</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/duckManager_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/duck_andre_coding_ufficial.png" alt="DuckManager Icon">
+                <span>DuckManager</span>
+            </div>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">Come Funziona</a></li>
+                <li><a href="#tech">Tecnologie</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-ducks" id="floating-ducks"></div>
+        <div class="hero-content">
+            <img src="../assets/duck_andre_coding_ufficial.png" alt="DuckManager" class="hero-icon">
+            <h1>DuckManager</h1>
+            <p class="subtitle">Photo(Android)  →  PC(windows)</p>
+            <p class="tagline">Connessione ADB • Trasferimento veloce • Organizzazione smart</p>
+            <div class="cta-buttons">
+                <a href="#download" class="cta-button">⬇ Download Gratuito</a>
+                <a href="#features" class="cta-button secondary">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title fade-in">Caratteristiche</h2>
+            <p class="section-subtitle fade-in">Tutto ciò che ti serve per gestire le tue foto Android</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3>Connessione ADB</h3>
+                    <p>Collegamento diretto al tuo dispositivo Android via USB con protocollo ADB per massima velocità e affidabilità.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Trasferimento Veloce</h3>
+                    <p>Trasferisci centinaia di foto in pochi secondi grazie all'ottimizzazione del processo di copia.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📁</div>
+                    <h3>Organizzazione Smart</h3>
+                    <p>Organizza automaticamente le foto per data, cartella o tipo di file con un solo click.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎨</div>
+                    <h3>UI Moderna</h3>
+                    <p>Interfaccia elegante con effetti glassmorphism e design intuitivo per un'esperienza premium.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Nessun dato viene caricato online. Tutto rimane sul tuo PC in totale sicurezza.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🦆</div>
+                    <h3>Duck Powered</h3>
+                    <p>Sviluppato con passione e attenzione ai dettagli. Quack! 🐤</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2 class="section-title fade-in">Come Funziona</h2>
+            <p class="section-subtitle fade-in">Tre semplici passi per iniziare</p>
+            <div class="steps-container">
+                <div class="step-item fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Collega il dispositivo</h3>
+                        <p>Connetti il tuo smartphone Android via USB e abilita il debug USB nelle opzioni sviluppatore.</p>
+                    </div>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Avvia DuckManager</h3>
+                        <p>Apri l'applicazione e clicca su "Connetti". DuckManager rileverà automaticamente il tuo dispositivo.</p>
+                    </div>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Trasferisci e organizza</h3>
+                        <p>Scegli la cartella di destinazione e lascia che Duck faccia il resto!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech">
+        <div class="container">
+            <h2 class="section-title fade-in">Stack Tecnologico</h2>
+            <p class="section-subtitle fade-in">Costruito con le migliori tecnologie</p>
+            <div class="tech-grid fade-in">
+                <div class="tech-badge">
+                    <span>Python 3.11+</span>
+                </div>
+                <div class="tech-badge">
+                    <span>PyQt6</span>
+                </div>
+                <div class="tech-badge">
+                    <span>ADB Tools</span>
+                </div>
+                <div class="tech-badge">
+                    <span>Pycharm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <div class="container">
+            <h2 class="section-title fade-in">Scarica DuckManager</h2>
+            <p class="section-subtitle fade-in">Gratuito e open source</p>
+            <div class="download-box glass-card fade-in">
+                <div class="version-badge">v1.0.0 • Windows</div>
+                <a href="#" class="download-btn">
+                    ⬇ Scarica per Windows
+                </a>
+                <div class="requirements">
+                    <h4>Requisiti di Sistema</h4>
+                    <ul>
+                        <li>Windows 10/11</li>
+                        <li>Python 3.11+</li>
+                        <li>USB Debug abilitato</li>
+                        <li>Driver ADB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <span>DuckManager</span>
+        </div>
+        <p>&copy; 2024 DuckManager. Tutti i diritti riservati.</p>
+        <p class="credits">Creato con 🐥 da Andrea Conrado</p>
+    </footer>
+
+    <script src="../js/duckManager_script.js"></script>
+</body>
+</html>

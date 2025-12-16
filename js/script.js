@@ -68,3 +68,7 @@ document.getElementById("poketanime").addEventListener("click", () => {
   window.location.href = "pages/PoketAnime.html";
 });
 
+// Navigation to another page
+document.getElementById("duckmanager").addEventListener("click", () => {
+  window.location.href = "pages/DuckManager.html";
+});

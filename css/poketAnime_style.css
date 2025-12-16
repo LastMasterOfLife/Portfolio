@@ -118,11 +118,13 @@ nav a:hover {
 .hero .subtitle {
     font-size: 24px;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 40px;
+    margin: 0 auto 40px;   /* centra il box */
     max-width: 600px;
     line-height: 1.6;
+    text-align: center;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
+
 
 .cta-buttons {
     display: flex;
@@ -177,8 +179,8 @@ nav a:hover {
 }
 
 .card-3d {
-    width: 180px;
-    height: 250px;
+    width: 31%;
+    height: 650px;
     position: relative;
     cursor: pointer;
     transition: all 0.4s;
@@ -243,6 +245,9 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card-name {
