@@ -1,17 +1,21 @@
-// Create particles
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 50; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.top = Math.random() * 100 + '%';
-    particle.style.animationDelay = Math.random() * 6 + 's';
-    particle.style.animationDuration = (4 + Math.random() * 4) + 's';
-    particlesContainer.appendChild(particle);
+// Floating cards animation
+const floatingCards = document.getElementById('floating-cards');
+const emojis = ['🎴', '⭐', '✨', '🃏', '💎', '🔥', '⚡', '🌸'];
+
+for (let i = 0; i < 15; i++) {
+    const card = document.createElement('div');
+    card.className = 'card-particle';
+    card.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    card.style.left = Math.random() * 100 + '%';
+    card.style.top = Math.random() * 100 + '%';
+    card.style.animationDelay = Math.random() * 5 + 's';
+    card.style.animationDuration = (8 + Math.random() * 6) + 's';
+    floatingCards.appendChild(card);
 }
 
-// Scroll animations
+// Fade in on scroll
 const fadeElements = document.querySelectorAll('.fade-in');
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -21,33 +25,3 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 fadeElements.forEach(el => observer.observe(el));
-
-// Mouse follow effect for cards
-const cards = document.querySelectorAll('.card-3d');
-document.addEventListener('mousemove', (e) => {
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    const tiltX = (e.clientY - centerY) / 40;
-    const tiltY = (e.clientX - centerX) / 40;
-    
-    cards.forEach(card => {
-        card.querySelector('.card-inner').style.transform = 
-            `rotateX(${-tiltX}deg) rotateY(${tiltY}deg)`;
-    });
-});
-
-// Smooth scroll
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-// Navigation to another page
-document.getElementById("poketanime").addEventListener("click", () => {
-  window.location.href = "../index.html";
-});

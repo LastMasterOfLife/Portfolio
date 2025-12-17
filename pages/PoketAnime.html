@@ -3,196 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoketAnime - Carte Collezionabili</title>
-     <base href="/Portfolio/">
+    <title>PoketAnime - Gioco di Carte Collezionabili</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <base href="/Portfolio/">
     <link rel="stylesheet" href="css/poketAnime_style.css">
-   
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">🎴 PoketAnime</div>
+            <div class="logo">
+                <div class="logo-icon">🎴</div>
+                <span>PoketAnime</span>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#packs">Pacchetti</a></li>
-                <li><a href="#collection">Collezione</a></li>
+                <li><a href="#cards">Carte</a></li>
+                <li><a href="#how-to-play">Come Giocare</a></li>
+                <li><a href="#download">Download</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="particles" id="particles"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-cards" id="floating-cards"></div>
         <div class="hero-content">
+            <div class="hero-icon">🎴</div>
             <h1>PoketAnime</h1>
-            <p class="subtitle">Il gioco di carte collezionabili definitivo con pacchetti 3D e carte con effetto giroscopico. Colleziona, combatti, domina!</p>
-            
+            <p class="subtitle">Colleziona • Combatti • Conquista</p>
+            <p class="tagline">Il gioco di carte collezionabili definitivo ispirato agli anime</p>
             <div class="cta-buttons">
-                <a href="#" class="cta-button primary">Gioca Ora</a>
-                <a href="#" class="cta-button">Guarda il Trailer</a>
-            </div>
-
-            <div class="cards-showcase">
-                <div class="card-3d">
-                    <div class="card-inner">
-                        <div class="card-rarity">Demon Slayer</div>
-                        <div class="card-image">
-                            <img src="assets/demon_slayer.jpg" alt="Demon Slayer Pack">
-                        </div>
-                        <div class="card-name">DemonPack</div>
-                        <div class="card-stats">
-                            <span>⚔️ 9500</span>
-                            <span>🛡️ 8000</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-3d">
-                    <div class="card-inner">
-                        <div class="card-rarity">★★★★ EPICA</div>
-                        <div class="card-image">
-                            <img src="assets/Gojo.jpg" alt="Jujizu Kaisen Pack">
-                        </div>
-                        <div class="card-name">Jujizu Pack</div>
-                        <div class="card-stats">
-                            <span>⚔️ 7200</span>
-                            <span>🛡️ 5500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-3d">
-                    <div class="card-inner">
-                        <div class="card-rarity">★★★★★ MITICA</div>
-                        <div class="card-image">
-                            <img src="assets/rudeus.jpg" alt="Mushoku Tensei Pack">
-                        </div>
-                        <div class="card-name">SAKURA ETERNA</div>
-                        <div class="card-stats">
-                            <span>⚔️ 8800</span>
-                            <span>🛡️ 9200</span>
-                        </div>
-                    </div>
-                </div>
+                <a href="#download" class="cta-button">🎮 Gioca Ora Gratis</a>
+                <a href="#cards" class="cta-button secondary">Scopri le Carte</a>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
     <section id="features">
         <div class="container">
             <h2 class="section-title fade-in">Caratteristiche</h2>
+            <p class="section-subtitle fade-in">Un'esperienza di gioco unica e coinvolgente</p>
             <div class="features-grid">
                 <div class="feature-card fade-in">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Effetto Giroscopico</h3>
-                    <p>Le carte reagiscono ai movimenti del tuo dispositivo con effetti olografici mozzafiato e riflessi realistici.</p>
+                    <div class="feature-icon">🃏</div>
+                    <h3>+500 Carte</h3>
+                    <p>Colleziona oltre 500 carte uniche ispirate ai tuoi anime preferiti con artwork esclusivi.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <div class="feature-icon">📦</div>
-                    <h3>Pacchetti 3D</h3>
-                    <p>Apri pacchetti con animazioni 3D incredibili. Ogni apertura è un'esperienza cinematografica unica.</p>
+                    <div class="feature-icon">⚔️</div>
+                    <h3>Battaglie PvP</h3>
+                    <p>Sfida giocatori da tutto il mondo in emozionanti battaglie in tempo reale.</p>
                 </div>
-                
                 <div class="feature-card fade-in">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Arte Esclusiva</h3>
-                    <p>Ogni carta presenta illustrazioni originali in stile anime create dai migliori artisti giapponesi.</p>
+                    <div class="feature-icon">🏆</div>
+                    <h3>Tornei Settimanali</h3>
+                    <p>Partecipa ai tornei e scala le classifiche per vincere premi esclusivi.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✨</div>
+                    <h3>Carte Animate</h3>
+                    <p>Le carte rare hanno animazioni spettacolari che prendono vita sul tuo schermo.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Ricompense Giornaliere</h3>
+                    <p>Accedi ogni giorno per ricevere pacchetti gratuiti e bonus speciali.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">👥</div>
+                    <h3>Gilde e Community</h3>
+                    <p>Unisciti a una gilda, scambia carte e partecipa a eventi cooperativi.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="packs">
+    <!-- Cards Preview -->
+    <section id="cards">
         <div class="container">
-            <h2 class="section-title fade-in">Pacchetti</h2>
-            <p class="section-subtitle fade-in">Scegli il tuo pacchetto e scopri quali carte leggendarie ti aspettano!</p>
-            
-            <div class="pack-container">
-                <div class="pack pack-basic fade-in">
-                    <div class="pack-wrapper">
-                        <div class="pack-icon">📦</div>
-                        <div class="pack-name">BASIC</div>
-                        <div class="pack-cards">5 Carte</div>
+            <h2 class="section-title fade-in">Carte Esclusive</h2>
+            <p class="section-subtitle fade-in">Scopri alcune delle carte più rare</p>
+            <div class="cards-showcase fade-in">
+                <div class="preview-card">
+                    <div class="card-inner">
+                        <div class="card-emoji">🐉</div>
+                        <div class="card-name">Drago Celeste</div>
+                        <div class="card-rarity">★★★ Rara</div>
                     </div>
                 </div>
-                <div class="pack pack-rare fade-in">
-                    <div class="pack-wrapper">
-                        <div class="pack-icon">💎</div>
-                        <div class="pack-name">RARE</div>
-                        <div class="pack-cards">8 Carte + 1 Rara</div>
+                <div class="preview-card">
+                    <div class="card-inner">
+                        <div class="card-emoji">⚡</div>
+                        <div class="card-name">Samurai Thunder</div>
+                        <div class="card-rarity">★★★★ Epica</div>
                     </div>
                 </div>
-                <div class="pack pack-legendary fade-in">
-                    <div class="pack-wrapper">
-                        <div class="pack-icon">👑</div>
-                        <div class="pack-name">LEGENDARY</div>
-                        <div class="pack-cards">10 Carte + 1 Leggendaria</div>
+                <div class="preview-card">
+                    <div class="card-inner">
+                        <div class="card-emoji">🌸</div>
+                        <div class="card-name">Sakura Spirit</div>
+                        <div class="card-rarity">★★★★★ Leggendaria</div>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="card-inner">
+                        <div class="card-emoji">🔥</div>
+                        <div class="card-name">Phoenix Ninja</div>
+                        <div class="card-rarity">★★★★ Epica</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="collection">
+    <!-- How to Play -->
+    <section id="how-to-play">
         <div class="container">
-            <h2 class="section-title fade-in">La Tua Collezione</h2>
-            <div class="gallery-grid fade-in">
-                <div class="gallery-card">🐉</div>
-                <div class="gallery-card">⚔️</div>
-                <div class="gallery-card">🌸</div>
-                <div class="gallery-card">⚡</div>
-                <div class="gallery-card locked">❓</div>
-                <div class="gallery-card locked">❓</div>
-                <div class="gallery-card">🔥</div>
-                <div class="gallery-card">🌊</div>
-                <div class="gallery-card locked">❓</div>
-                <div class="gallery-card">🌙</div>
-                <div class="gallery-card locked">❓</div>
-                <div class="gallery-card locked">❓</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="stats">
-        <div class="container">
-            <div class="stats-grid fade-in">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Carte Uniche</div>
+            <h2 class="section-title fade-in">Come Giocare</h2>
+            <p class="section-subtitle fade-in">Inizia la tua avventura in pochi passi</p>
+            <div class="steps-container">
+                <div class="step-item fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Costruisci il tuo Deck</h3>
+                        <p>Scegli 30 carte per creare il tuo mazzo personalizzato. Bilancia attacco, difesa e carte speciali.</p>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">1M+</div>
-                    <div class="stat-label">Giocatori</div>
+                <div class="step-item fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Sfida gli Avversari</h3>
+                        <p>Entra in battaglia contro l'IA o sfida altri giocatori online in match competitivi.</p>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Tornei Mensili</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">Divertimento</div>
+                <div class="step-item fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Vinci e Colleziona</h3>
+                        <p>Ogni vittoria ti premia con nuove carte e risorse per potenziare la tua collezione!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Rarities -->
+    <section id="rarities">
+        <div class="container">
+            <h2 class="section-title fade-in">Rarità delle Carte</h2>
+            <p class="section-subtitle fade-in">Quattro livelli di rarità da collezionare</p>
+            <div class="rarity-grid fade-in">
+                <div class="rarity-badge common">
+                    <div class="rarity-dot"></div>
+                    <span>Comune</span>
+                </div>
+                <div class="rarity-badge rare">
+                    <div class="rarity-dot"></div>
+                    <span>Rara</span>
+                </div>
+                <div class="rarity-badge epic">
+                    <div class="rarity-dot"></div>
+                    <span>Epica</span>
+                </div>
+                <div class="rarity-badge legendary">
+                    <div class="rarity-dot"></div>
+                    <span>Leggendaria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <div class="container">
+            <h2 class="section-title fade-in">Scarica PoketAnime</h2>
+            <p class="section-subtitle fade-in">Gratuito su tutte le piattaforme</p>
+            <div class="download-box fade-in">
+                <div class="version-badge">v2.1.0 • Free to Play</div>
+                <div>
+                    <a href="#" class="download-btn ios">
+                        🍎 App Store
+                    </a>
+                    <a href="#" class="download-btn android">
+                        🤖 Google Play
+                    </a>
+                </div>
+                <div class="platforms">
+                    <span class="platform-tag">iOS 14+</span>
+                    <span class="platform-tag">Android 8+</span>
+                    <span class="platform-tag">Tablet</span>
+                    <span class="platform-tag">Cross-Platform</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-logo">🎴 PoketAnime</div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Termini di Servizio</a>
-                <a href="#">Supporto</a>
-                <a href="#">Contatti</a>
-            </div>
-            <p>&copy; 2024 PoketAnime. Tutti i diritti riservati.</p>
+        <div class="logo" style="justify-content: center;">
+            <div class="logo-icon">🎴</div>
+            <span style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">PoketAnime</span>
         </div>
+        <p>&copy; 2024 PoketAnime. Tutti i diritti riservati.</p>
+        <p class="credits">Creato con ❤️ per gli amanti degli anime</p>
     </footer>
 
-    <div class="gyro-indicator">
-        <span class="gyro-icon">📱</span>
-        <span>GYRO ATTIVO</span>
-    </div>
-
-    <script src="js/particles.min.js"></script>
     <script src="js/poketAnime_script.js"></script>
 </body>
 </html>
