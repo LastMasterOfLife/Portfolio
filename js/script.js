@@ -69,6 +69,11 @@ document.getElementById("poketanime").addEventListener("click", () => {
 });
 
 // Navigation to another page
+document.getElementById("apprenderai").addEventListener("click", () => {
+  window.location.href = "pages/ApprenderAI.html";
+});
+
+// Navigation to another page
 document.getElementById("duckmanager").addEventListener("click", () => {
   window.location.href = "pages/DuckManager.html";
 });
