@@ -62,18 +62,3 @@ window.addEventListener('scroll', () => {
         nav.style.background = 'rgba(255, 255, 255, 0.1)';
     }
 });
-
-// Navigation to another page
-document.getElementById("poketanime").addEventListener("click", () => {
-  window.location.href = "pages/PoketAnime.html";
-});
-
-// Navigation to another page
-document.getElementById("apprenderai").addEventListener("click", () => {
-  window.location.href = "pages/ApprenderAI.html";
-});
-
-// Navigation to another page
-document.getElementById("duckmanager").addEventListener("click", () => {
-  window.location.href = "pages/DuckManager.html";
-});
